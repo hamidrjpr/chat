@@ -10,7 +10,7 @@ export function register() {
 export const onRequestError: Instrumentation.onRequestError = async (
   err,
   request,
-  context
+  context,
 ): Promise<void> => {
   console.log(err, request, context);
 };
