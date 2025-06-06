@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #1c1930;
+  border: 1px solid #ffc857;
+}
+
+.sidebar {
+  height: calc(100vh - 70px);
+  background-color: #09318e;
+  border: 1px solid #ffc857;
+  width: 20%;
+}
+
+.main {
+  height: calc(100vh - 70px);
+  background-color: #09318e;
+  border: 1px solid #ffc857;
+  width: 60%;
+}
+
+.chat {
+  height: calc(100vh - 70px);
+  background-color: #09318e;
+  border: 1px solid #ffc857;
+  width: 20%;
+}
