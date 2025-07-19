@@ -9,6 +9,17 @@ const nextConfig: NextConfig = {
     };
     return config;
   },
+  experimental: {
+    ppr: "incremental",
+    // ppr: means partial prerendering
+  },
+  images: {
+    remotePatterns: [
+      {
+        hostname: "picsum.photos",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
