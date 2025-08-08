@@ -1,6 +1,6 @@
 "use client";
 import { User, UserContext } from "@/components/UserProvider";
-import { useContext } from "react";
+import { CSSProperties, useContext } from "react";
 
 export default function UserProfile() {
   const { user } = useContext(UserContext) as { user: User };
@@ -16,7 +16,7 @@ export default function UserProfile() {
   );
 }
 
-const styles: Record<string, React.CSSProperties> = {
+const styles: Record<string, CSSProperties> = {
   container: {
     display: "flex",
     flexDirection: "column" as const,
