@@ -22,6 +22,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+<<<<<<< Updated upstream
+=======
+  let user: User;
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users/2");
+    user = await res.json();
+  } catch (err) {
+    // Re-throw to trigger the nearest error.tsx
+    throw err;
+  }
+>>>>>>> Stashed changes
   return (
     <html lang="en">
       <body

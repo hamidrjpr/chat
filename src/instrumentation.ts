@@ -13,4 +13,6 @@ export const onRequestError: Instrumentation.onRequestError = async (
   context,
 ): Promise<void> => {
   console.log(err, request, context);
+  // log the error to the console
+  console.error(err);
 };
